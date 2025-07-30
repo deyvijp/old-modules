@@ -1,0 +1,16 @@
+<odoo>
+    <record id="view_stock_landed_cost_file_form_inherit" model="ir.ui.view">
+        <field name="name">stock.landed.cost.file.form.inherit.barcode</field>
+        <field name="model">stock.landed.cost.file</field>
+        <field name="inherit_id" ref="stock_landed_costs_file.stock_landed_costs_file_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button class="oe_stat_button"
+                        name="action_open_products_without_barcode_tree" type="object"
+                        icon="fa-barcode" help="Productos sin código de barra">
+                    <field string="Sin código" name="product_ids_no_barcode" widget="statinfo"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>
