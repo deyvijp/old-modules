@@ -1,4 +1,6 @@
-# filepath: create_odoo_module.sh
+# filepath: create__module.sh
+# chmod +x create_module.sh
+# run ./create_module.sh
 
 read -p "Nombre del módulo: " MODULE
 read -p "¿Es un módulo Owl? (s/n): " IS_OWL
